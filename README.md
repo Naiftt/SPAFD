@@ -11,7 +11,7 @@ Collaboration among multiple data-owning entities (e.g., hospitals) can accelera
 
 # Install dependencies
 function test() {
-  console.log("pip install -r requirements.txt");
+  console.log("");
 }
-```
+pip install -r requirements.txt
 
