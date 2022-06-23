@@ -5,3 +5,4 @@ scipy == 1.7.3
 tqdm 
 pickle-mixin
 pandas == 1.3.4
+Pillow
