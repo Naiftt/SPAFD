@@ -8,3 +8,6 @@ Collaboration among multiple data-owning entities (e.g., hospitals) can accelera
 # Download Dataset (CheXpert and HAM10000)
 [Chexpert](https://stanfordmlgroup.github.io/competitions/chexpert/) <br />
 [HAM10000](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)
+
+# Install dependencies
+pip install -r requirements.txt
