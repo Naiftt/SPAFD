@@ -10,7 +10,9 @@ Collaboration among multiple data-owning entities (e.g., hospitals) can accelera
 [HAM10000](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000)
 
 # Install dependencies
-console.log('a code block');
+```
 pip install -r requirements.txt
+
+```
 
 
