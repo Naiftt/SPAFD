@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 # Run DOS method in Federated setting 
 ```
-python main.py --method COPOD --numOfAgents 10 --numOfClasses 7 --data noniid_skincancer --modelName ConvSkin --numOfAttacked 1 --AttackInfo "{<agent_index>:'label_flip01'}" --local_steps 1 --numOfRounds 1 --seed 2 --lr 0.01 --B 16
+python main.py --method COPOD --numOfAgents 10 --numOfClasses 7 --data noniid_skincancer --modelName ConvSkin --numOfAttacked 1 --AttackInfo "{0:'label_flip01'}" --local_steps 1 --numOfRounds 1 --seed 2 --lr 0.01 --B 16
 ```
 **COPOD** is the mthod name <br />
 data: **'noniid_skincancer'** or **'chexpert'** <br />
@@ -29,7 +29,9 @@ examples of how to enter each attack: <br />
 'label_flip01': It will flip the true label 1 to the fake label 0 <br /> 
 'opposite_weight100': It will the true weights multiplied by -100 <br /> 
 'scaled_weight100': It will scale the true weights by 100 <br /> 
-'craftedModel': It is a designed crafted attack. 
+'craftedModel': It is a designed crafted attack.  <br /> 
+Example of attack info (Attacks on more than one agents): <br /> 
+--AttackInfo "{0:'label_flip01', 1:'random_weight', 2:'scaled_weight100'}"
 
 
 
