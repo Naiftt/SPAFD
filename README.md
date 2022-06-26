@@ -33,6 +33,9 @@ AttackInfo: **'random_weight'** or **'opposite_weight<how_much_opposite>** or **
 Example of attack info (Attacks on more than one agents): <br /> 
 --AttackInfo "{0:'label_flip01', 1:'random_weight', 2:'scaled_weight100'}"
 
+# Data Path
+In the function **skinCancer** in dataset.py you can input the path of HAM10000 data <br /> 
+In the function **chexpert** in dataset.py you can input the path of chexpert dataset
 
 
 
