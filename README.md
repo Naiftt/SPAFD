@@ -23,7 +23,7 @@ data: 'noniid_skincancer' or 'chexpert' <br />
 modelName: 'ConvSkin' for HAM10000 or 'ResNet18' for chexpert <br />
 numOfAttacked: number of attacked agents (has to be less than 50%) <br /> 
 AttackInfo: **'random_weight'** or **'opposite_weight<how_much_opposite>** or **'scaled_weight<how_much_scaled>** or **'craftedModel'** <br /> 
-<u>(note crafted model was designed for Krum)**</u>
+<u>(note crafted model was designed for Krum)</u>
 
 
 
