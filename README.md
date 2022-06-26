@@ -27,7 +27,7 @@ AttackInfo: **'random_weight'** or **'opposite_weight<how_much_opposite>** or **
 **Examples of how to enter each attack:** <br />   
 'random_weight': It will send gaussian noise to the global model <br /> 
 'label_flip01': It will flip the true label 1 to the fake label 0 <br /> 
-'opposite_weight100': It will the true weights multiplied by -100 <br /> 
+'opposite_weight100': It will send the true weights multiplied by -100 <br /> 
 'scaled_weight100': It will scale the true weights by 100 <br /> 
 'craftedModel': It is a designed crafted attack.  <br /> 
 Example of attack info (Attacks on more than one agents): <br /> 
