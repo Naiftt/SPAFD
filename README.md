@@ -24,7 +24,7 @@ modelName: **'ConvSkin'** for HAM10000 or **'ResNet18'** for chexpert <br />
 numOfAttacked: number of attacked agents (has to be less than 50%) <br /> 
 AttackInfo: **'random_weight'** or **'opposite_weight<how_much_opposite>** or **'scaled_weight<how_much_scaled>** or **'craftedModel'** <br /> 
 <u>(note crafted model was designed for Krum)</u> <br />  
-examples of how to enter each attack: <br />   
+**Examples of how to enter each attack:** <br />   
 'random_weight': It will send gaussian noise to the global model <br /> 
 'label_flip01': It will flip the true label 1 to the fake label 0 <br /> 
 'opposite_weight100': It will the true weights multiplied by -100 <br /> 
