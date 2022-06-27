@@ -37,5 +37,10 @@ Example of attack info (Attacks on more than one agents): <br />
 In the function **skinCancer** in dataset.py you can input the path of HAM10000 data <br /> 
 In the function **chexpert** in dataset.py you can input the path of chexpert dataset
 
-
+# Results
+To check the performance of the global model 
+```
+np.load("rocs.pkl", allow_pickle = True) 
+```
+**rocs.pkl** will show the results for each class for chexpert dataset and the average of all classes for HAM10000
 
