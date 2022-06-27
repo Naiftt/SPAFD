@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 python main.py --method COPOD --numOfAgents 10 --numOfClasses 7 --data noniid_skincancer --modelName ConvSkin --numOfAttacked 1 --AttackInfo "{0:'label_flip01'}" --local_steps 1 --numOfRounds 1 --seed 2 --lr 0.01 --B 16
 ```
-**COPOD** is the mthod name <br />
+**COPOD** is the method name <br />
 data: **'noniid_skincancer'** or **'chexpert'** <br />
 modelName: **'ConvSkin'** for HAM10000 or **'ResNet18'** for chexpert <br />
 numOfAttacked: number of attacked agents (has to be less than 50%) <br /> 
