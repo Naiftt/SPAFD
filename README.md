@@ -26,7 +26,7 @@ AttackInfo: **'random_weight'** or **'opposite_weight<how_much_opposite>** or **
 <u>(note crafted model was designed for Krum)</u> <br />  
 **Examples of how to enter each attack:** <br />   
 'random_weight': It will send gaussian noise to the global model <br /> 
-'label_flip01': It will flip the true label 1 to the fake label 0 <br /> 
+'label_flip01': It will flip the true label 1 to the fake label 0 (You can choose any other label number) <br /> 
 'opposite_weight100': It will send the true weights multiplied by -100 <br /> 
 'scaled_weight100': It will scale the true weights by 100 <br /> 
 'craftedModel': It is a designed crafted attack.  <br /> 
