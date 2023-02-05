@@ -31,7 +31,7 @@ plt.rcParams['figure.dpi'] = 100
 plt.rcParams['savefig.dpi'] = 80
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 class Federated:
   def __init__(self, numOfAgents,numOfClasses,data, modelDiff, B, seedo):
@@ -237,7 +237,11 @@ class Federated:
                 
 
   def learn(self,cm, opt, adata):
-    random_indices = torch.randperm(self.batch_size)
+    if self.batch_size > adata[0][1].shape[0]:
+        batch_size = adata[0][1].shape[0]
+    else:
+        batch_size = self.B
+    random_indices = torch.randperm(batch_size)
     x = 0
     if self.data == 'chexpert':
         for i in adata:
